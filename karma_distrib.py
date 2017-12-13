@@ -19,9 +19,6 @@ outfile = infile
 baseUrl = "http://www.reddit.com/user/"
 users = Queue()
 userSet = set()
-#user0 = "gimunu"
-#users.put(user0)
-#userSet.add(user0)
 
 #with open(infile,"r") as f:
 #	results = pickle.load(f)
