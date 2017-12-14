@@ -41,7 +41,7 @@ while not users.empty():
 		substr = substr[substr.find(">")+1:substr.find("<")]
 		karma = "".join([_ for _ in substr if _.isdigit()])
 		karma = int(karma)
-		print( user,"\t",karma)
+		print( "%-35s %d" %(user,karma))
 		results[user] = karma
 		with open(outfile,"a") as f:
 			f.write("%s %d\n" %(user,karma))
@@ -51,7 +51,7 @@ while not users.empty():
 		for _ in new_users:
 			users.put(_)
 	except:
-		print( "\t\trejection...")
+		print( "...".center(40))
 		sleep(5)
 	#read karma here
 	else:
